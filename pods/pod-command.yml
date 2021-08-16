@@ -4,7 +4,7 @@ metadata:
   - name: s2
 spec:
   containers:
-     name: debeg
+    - name: debug
     image: centos:7  
     - name: ping
     image:  zelarsoft/zs-ping
