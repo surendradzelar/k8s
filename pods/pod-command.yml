@@ -4,9 +4,9 @@ metadata:
   - name: s2
 spec:
   containers:
-  - name: debeg
-  image: centos:7  
-  - name: ping
-  image:  zelarsoft/zs-ping
-  args:
-    - "yahoo.com"
+    - name: debeg
+    image: centos:7  
+    - name: ping
+    image:  zelarsoft/zs-ping
+    args:
+      - "yahoo.com"
