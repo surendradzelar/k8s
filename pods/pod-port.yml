@@ -8,5 +8,5 @@ spec:
       image: nginx
       ports:
       - name: http
-      containersport: 80
-      hostport: 80    
+      containerPort: 80
+      hostPort: 80    
