@@ -4,26 +4,30 @@ metadata:
   name: sample4
 spec:
   containers:
-  - name: centos
-    image: centos:7
-    command:
-    - sleep
-    - "10000"
-  envFrom:
-  - configMapRef:
-      name: sample-meta
-  env:
-    - name: URL
-    valueFrom:
-      configMapKeyRef:
-      key: URL
-      name:  sample-meta
+    - name: centos
+      image: centos:7
+      command:
+      - sleep
+      - "100000"
+      envFrom:
+      - configMapRef:
+          name: sample-meta
+      env:
+        - name: URL
+          valueFrom:
+            configMapKeyRef:
+              key: URL
+              name: sample-meta
+
+
+
+
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: sample-meta
 data:
-  URL: yahoo.com        
+  URL: yahoo.com
   ENV: dev
   PROJECT: sample
