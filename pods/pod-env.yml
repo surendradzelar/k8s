@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   name: sample4
 spec:
-containers:
-- name: centos
+  containers:
+  - name: centos
   image: centos:7
   command:
   - sleep
